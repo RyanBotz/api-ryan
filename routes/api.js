@@ -139,7 +139,7 @@ loghandler = {
     }
 }
 
-const listkey = ["RyanBotz", "@ryannolep", "JihanCantik","Gilang"];
+const listkey = ["JihanCantik", "@ryannolep", "RyanBotz","Gilang"];
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
