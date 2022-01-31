@@ -288,7 +288,7 @@ router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/vietnam.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -306,7 +306,7 @@ router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/thailand.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -324,7 +324,7 @@ router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/china.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -342,7 +342,7 @@ router.get('/cewe/indonesia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/indonesia.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/indonesia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -360,7 +360,7 @@ router.get('/cewe/korea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/korea.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/korea.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -378,7 +378,7 @@ router.get('/cewe/japan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/japan.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/japan.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -396,7 +396,7 @@ router.get('/cewe/malaysia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/malaysia.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/malaysia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -1320,7 +1320,7 @@ router.get('/textmaker/game', async (req, res, next) => {
         	if (!text2) return res.json(loghandler.nottext2)
             try {
             request.post({
-                url: "https://photooxy.com/battlegrounds/make-wallpaper-battlegrounds-logo-text-146.html",
+                url: "https://photooxy.com/battlegrounds/make-walllpaper-battlegrounds-logo-text-146.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
