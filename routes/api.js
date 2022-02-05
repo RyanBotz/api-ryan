@@ -292,7 +292,7 @@ router.get('/cewe/vietnam', async (req, res, next) => {
         .then(response => response.json())
         .then(data => {
         var result = data;
-        var result = data[Math.floor(Math.random() * data.length)];
+        var result = data;
              res.json({
              	author: 'RyanBotz',
                  result
