@@ -305,12 +305,12 @@ router.get('/cewe/vietnam', async (req, res, next) => {
 router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'JihanCantik')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
-        var result = data;
+        var result = data[Math.floor(Math.random() * data.length)];
              res.json({
              	author: 'RyanBotz',
                  result
@@ -324,7 +324,7 @@ router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/thailand.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -410,6 +410,26 @@ router.get('/cewe/malaysia', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 })
+// apakah
+router.get('/update/apakah', async (req, res, next) => {
+    var apikeyInput = req.query.apikey
+if(!apikeyInput) return res.json(loghandler.notparam)	
+if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
+   fetch(encodeURI('https://raw.githubusercontent.com/AthallahDzaki/freerestapi-data/king/wouldYouRather.json'))
+    .then(response => response.json())
+    .then(data => {
+    var result = data;
+    var result = data[Math.floor(Math.random() * data.length)];
+         res.json({
+             author: 'RyanBotz',
+             result
+         })
+     })
+     .catch(e => {
+         res.json(loghandler.error)
+})
+})
+
 //Asupan
 router.get('/asupan/cecan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
@@ -3576,25 +3596,5 @@ router.get('/maker/special/epep', async (req, res, next) => {
 })
 })
 
-router.get('/asupan/kontol', async (req, res, next) => {
-        var apikeyInput = req.query.apikey
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan/rikagusriani.json`))
-        .then(response => response.json())
-        .then(data => {
-        var result = data;
-        var result = data[Math.floor(Math.random() * data.length)];
-             res.json({
-             	author: 'RyanBotz',
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-})
 
 module.exports = router
