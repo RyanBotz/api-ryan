@@ -305,7 +305,7 @@ router.get('/cewe/vietnam', async (req, res, next) => {
 router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'JihanCantik')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
