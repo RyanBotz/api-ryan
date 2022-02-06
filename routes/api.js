@@ -422,6 +422,25 @@ if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
     var result = data[Math.floor(Math.random() * data.length)];
          res.json({
              author: 'RyanBotz',
+             text
+         })
+     })
+     .catch(e => {
+         res.json(loghandler.error)
+})
+})
+// drak
+router.get('/ryan/drak', async (req, res, next) => {
+    var apikeyInput = req.query.apikey
+if(!apikeyInput) return res.json(loghandler.notparam)	
+if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
+   fetch(encodeURI('https://raw.githubusercontent.com/RyanBotz/asupan/master/drak.json'))
+    .then(response => response.json())
+    .then(data => {
+    var result = data;
+    var result = data[Math.floor(Math.random() * data.length)];
+         res.json({
+             author: 'RyanBotz',
              result
          })
      })
