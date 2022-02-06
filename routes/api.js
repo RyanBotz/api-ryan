@@ -411,7 +411,7 @@ router.get('/cewe/malaysia', async (req, res, next) => {
 })
 })
 // apakah
-router.get('/update/apakah', async (req, res, next) => {
+router.get('/ryan/apakah', async (req, res, next) => {
     var apikeyInput = req.query.apikey
 if(!apikeyInput) return res.json(loghandler.notparam)	
 if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
