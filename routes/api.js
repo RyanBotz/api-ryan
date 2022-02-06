@@ -310,7 +310,7 @@ router.get('/cewe/thailand', async (req, res, next) => {
         .then(response => response.json())
         .then(data => {
         var result = data;
-        var result = data[Math.floor(Math.random() * data.length)];
+        var result = data;
              res.json({
              	author: 'RyanBotz',
                  result
@@ -324,7 +324,7 @@ router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'RyanBotz')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/china.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/RyanBotz/asupan/master/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
