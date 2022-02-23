@@ -1239,7 +1239,7 @@ router.get('/nulis', async (req, res, next) => {
 	if(apikeyInput != 'RyanBotz') return res.json(loghandler.invalidKey)
     if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
-       fetch(encodeURI(`http://salism3.pythonanywhere.com/write/?text=${text}`))
+       fetch(encodeURI(`https://hadi-api.herokuapp.com/api/canvas/nulis?text=${text}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
